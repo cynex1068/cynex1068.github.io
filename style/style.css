@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f7f6f3;
+  color: #1e1e1e;
+  font-family: 'Iowan Old Style', 'Palatino Linotype', 'Palatino', 'Book Antiqua', Georgia, 'Times New Roman', serif;
+  line-height: 1.65;
+  padding: 3.5rem 1.5rem;
+  max-width: 680px;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.02rem;
+}
+
+a {
+  color: #1e1e1e;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 0.5px;
+  text-decoration-color: #a8a8a8;
+  transition: text-decoration-color 0.15s ease;
+}
+
+a:hover {
+  text-decoration-color: #1e1e1e;
+}
+
+header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.75rem;
+  margin-bottom: 2.25rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #d6d3cd;
+}
+
+.avatar {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #d6d3cd;
+  filter: grayscale(15%);
+  flex-shrink: 0;
+}
+
+.header-text h1 {
+  font-size: 1.9rem;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  margin-bottom: 0.15rem;
+}
+
+.header-text .handle {
+  font-size: 0.92rem;
+  color: #6b6b6b;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  font-style: italic;
+}
+
+.header-text .location {
+  font-size: 0.88rem;
+  color: #8a8a8a;
+  font-style: normal;
+  letter-spacing: 0.02em;
+  margin-top: 0.15rem;
+}
+
+.intro {
+  margin: 2rem 0 2.5rem 0;
+}
+
+.intro p {
+  font-size: 1.02rem;
+  color: #2b2b2b;
+  margin-bottom: 1rem;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.intro p:last-child {
+  margin-bottom: 0;
+}
+
+.intro .email {
+  font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'Courier New', monospace;
+  font-size: 0.88rem;
+  background: #eae8e3;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  color: #2b2b2b;
+}
+
+footer {
+  margin-top: 2.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #d6d3cd;
+  font-size: 0.85rem;
+  color: #6b6b6b;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+@media (max-width: 500px) {
+  body {
+    padding: 2rem 1rem;
+    font-size: 0.98rem;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .avatar {
+    width: 72px;
+    height: 72px;
+  }
+
+  .header-text h1 {
+    font-size: 1.6rem;
+  }
+}
